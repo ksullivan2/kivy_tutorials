@@ -46,7 +46,7 @@ class PongGame(Widget):
         #bounce ball off bottom or top
         if (self.ball.y < self.y) or (self.ball.top > self.top):
             self.ball.velocity_y *= -1
-
+    1`
         #went of to a side to score point?
         if self.ball.x < self.x:
             self.player2.score += 1
