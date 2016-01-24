@@ -1,0 +1,17 @@
+<ScatterTextWidget>:
+    #everything to the right of the colon is pure python!
+    orientation: "vertical"
+    TextInput:
+        #this names this sub-widget so you can refer to it in other widget
+        id: my_textinput
+        font_size: 150
+        size_hint_y: None
+        height: 200
+        text: "default"
+    FloatLayout:
+        Scatter:
+            Label:
+                text: my_textinput.text
+                font_size: 150
+    
+    
