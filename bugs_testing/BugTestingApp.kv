@@ -1,0 +1,33 @@
+<BugTester>:
+    Button:
+        background_disabled_normal: "background.jpg"
+        disabled: True
+        #Image wasn't scaling to fit the window grrrr
+
+
+<GamePiece>:
+    id: gamepiece
+    size_hint:(None, None)
+    group: self.player_color
+    border: (0,0,0,0)
+
+
+    RelativeLayout:
+        center: root.center
+        on_size: self.size = root.size
+        id: layout
+
+        canvas:
+            Color:
+                rgba: 0,0,0,1
+            Ellipse:
+                id: circle
+                size: (root.width/2.5, root.height/3)
+                pos: -15, -20
+        Label:
+            id: number
+            text: str(root.number)
+            color: (1,1,1,1)
+            font_size: root.height/4
+            bold: True
+            pos_hint: {"x": -.4, "y": -.45}
