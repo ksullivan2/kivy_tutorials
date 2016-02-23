@@ -24,7 +24,7 @@ class GamePiece(ToggleButton):
     def __init__(self, number, color, **kwargs):
         self.number = number
         self.player_color = color
-        self.background_normal = "5.png"
+        #self.background_normal = "5.png"
         super(GamePiece, self).__init__()
 
 
